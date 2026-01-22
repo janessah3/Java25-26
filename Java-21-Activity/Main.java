@@ -17,7 +17,16 @@ class Main {
   How many days will it take for the amount in plan B to equal or exceed that of plan A?
   Write a function allowance1() that solves the problem.
 */
-
+void allowance1(){
+    int day=1;
+    int pennyPlan = 1;
+    while (pennyPlan < 500){
+      print("Day " + day + ": " + pennyPlan);
+      pennyPlan *= 2;
+      day++;
+    }
+    print("Penny plan exceeds $5 in "+day+ " days. Value is: "+ pennyPlan);
+  }
 
 /* Challenge 2:  Allowance Plan 1 or 2 ?  
   Plan-1 : Start with $1000. Add $100 each day to the previous day's balance.
@@ -25,6 +34,28 @@ class Main {
 
   Write a function allowance2() that will display the daily value in each plan as you determine how many days it will take for Plan2 to be better than Plan1.
 */
+ void allowance2(){
+      int alw1 = 1000;
+      double alw2 = 0.01;
+      double amt = 0.01;
+      int day = 1;
+      print("Day   Plan-1      Plan-2");
+      print("---  --------   ----------");
+      print(day + "    $ "+alw1 + "      $ "+alw2);
+      while (alw1 > alw2){
+        //Plan 1
+        alw1 += 100;
+
+        //Plan 2
+        amt *= 2;
+        alw2 += amt;
+
+        day++;
+
+        print(day + "    $ "+alw1 + "      $ "+alw2);
+      }
+      print("\nPlan-2 exceeds Plan-1 on day "+day);
+    }
 
   
 
