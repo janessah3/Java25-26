@@ -15,11 +15,7 @@ class Main {
   */
   int eggs(){
    int numberOfEggs = 7;
-   while( !(numberOfEggs % 2 == 1 &&
-           numberOfEggs % 3 == 1 &&
-           numberOfEggs % 4 == 1 &&
-           numberOfEggs % 5 == 1 &&
-           numberOfEggs % 6 == 1 &&) ){
+   while( !(numberOfEggs % 2 == 1 && numberOfEggs % 3 == 1 && numberOfEggs % 4 == 1 && numberOfEggs % 5 == 1 && numberOfEggs % 6 == 1) ){
      numberOfEggs += 7;
     }
     return numberOfEggs;
