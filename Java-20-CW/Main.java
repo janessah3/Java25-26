@@ -29,7 +29,7 @@ class Main {
     */
    double intersect(){
     int x=0;
-    while(x=3 != 12-2*x){
+    while(x+3 != 12-2*x){
       x++;
     }
     return x;
