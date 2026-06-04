@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Java Project: Books</title>
+    <!-- import CSS file(s) -->
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="components.css" rel="stylesheet" type="text/css" />
+    <!-- import JS file(s) -->
+    <script src="components.js"></script>
+    <script src="books.js"></script>
+  </head>
+  
+  <!-- Call the int function when website loads -->
+  <body onload="init()" id = "body" >
+    <div>
+      <!--  Header or Banner -->
+      <div id="header">
+        <h1> The Multiverse Shelf - DB Project </h1>
+      </div>
+      <!--  nav bar -->
+      <nav id='nav'>
+        <h2 style="color:blue; text-shadow: 2px 2px cadetblue;">BOOKS</h2>
+            <a href="index.html" class="button">HOME</a>   
+            <a href="games.html" class="button">GAMES</a> 
+            <a href="books.html" class="button">BOOKS</a>
+            <a href="movies.html" class="button">MOVIES</a>
+      </nav>
+      
+      <div class="container">
+        
+        <div class='panel'>
+          <div class="container filter">
+            <div>          
+              Left Panel
+              <h4> Search for books by franchise</h4>
+              <input style="flex:2;text-align:right;" type="text" 
+                id="booksi" placeholder="Enter franchise" >      
+              <a class="button" onclick="filter()"> Search </a><br>
+              <h4 id="count"></h4>
+            </div>
+          </div>
+          <div><img src="Potter.png"></div>
+        </div>
+        
+        <div id='centerpanel' class='container'>
+          Center Panel
+        </div>
+        
+
+        
+      </div>
+
+      <div id='foot'>
+        <h3> Made by Janessa and Adrian </h3>
+        <img src="sonamon.jpg" style="width:150px;height:100;">
+      </div>
+
+    </div>
+    
+  </body>
+</html>
